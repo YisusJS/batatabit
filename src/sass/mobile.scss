@@ -1,3 +1,12 @@
+// font-family: 'Inter', sans-serif;
+
+// Import sass variables
+@use "./variables";
+
+// Import functions
+@import "./mixins.scss";
+
+// Set general properties
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +15,65 @@
 
 html {
   font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
+  height: auto;
   font-size: 1.6rem;
-  background-color: blueviolet;
+}
+
+// ----- Header ----
+.header {
+  position: relative;
+  width: 100vw;
+  min-width: 32rem;
+  height: 29.5rem;
+  background: variables.$linear-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  &__logo {
+    width: 15.1rem;
+    height: 2.4rem;
+  }
+
+  &__content {
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    font-style: normal;
+
+    h1 {
+      @include font("DM Sans", 2.4rem, 700, 2.6rem, variables.$just-white);
+    }
+
+    p {
+      margin-top: 2.4rem;
+      @include font("DM Sans", 1.4rem, 500, 1.8rem, variables.$soft-orange);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 92%;
+    width: 22.9rem;
+    height: 4.8rem;
+    border-radius: 0.4rem;
+    background: variables.$off-white;
+    text-decoration: none;
+    @include font("DM Sans", 1.4rem, 700, 4.8rem, variables.$warm-black);
+    @include boxShadow("black");
+
+    span {
+      display: inline-block;
+      width: 1.2rem;
+      height: 0.741rem;
+      margin-left: 1rem;
+      background-image: url("../assets/icons/down-arrow.svg");
+    }
+  }
 }
