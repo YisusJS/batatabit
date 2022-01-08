@@ -1,5 +1,6 @@
 // Define current hour
-const span = document.getElementById("date");
+const span = document.querySelector(".introduction__info");
+const span2 = document.querySelector(".introduction__info--blue");
 
 // Function that return the current hour 
 const getDate = () => {
@@ -36,3 +37,4 @@ const allDate = getDate();
 
 // Insert string to span
 span.innerHTML += allDate;
+span2.innerHTML += allDate;

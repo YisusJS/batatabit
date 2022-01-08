@@ -113,14 +113,20 @@ body {
 
     &__table {
       width: 70%;
+      // min-width: 32rem;
 
       div {
         margin-bottom: 1.6rem;
 
-        p {
+        .introduction__title {
           text-align: left;
           margin-bottom: 1.2rem;
+          margin-left: 3rem;
           @include font("DM Sans", 1.8rem, 700, 2.344rem, #ff9536);
+
+          &--blue {
+            color: variables.$secondary-blue;
+          }
         }
 
         div {
@@ -183,6 +189,21 @@ body {
               }
             }
           }
+
+          .crypto-table--blue {
+            width: 19rem;
+            margin: 0 auto;
+
+            tr {
+              td:nth-child(1) {
+                width: 10.1rem;
+              }
+
+              td:nth-child(2) {
+                width: 8.8rem;
+              }
+            }
+          }
         }
 
         .crypto-table__arrow {
@@ -194,6 +215,23 @@ body {
           position: absolute;
           top: 47%;
           right: -12%;
+
+          &--left {
+            transform: rotate(180deg);
+            margin-top: 10px;
+            left: -10%;
+          }
+        }
+
+        .crypto-table__batata {
+          display: inline-block;
+          width: 4.057rem;
+          height: 2.401rem;
+          background-image: url("../assets/icons/batata.svg");
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 160%;
+          left: calc(50% - 2.401rem);
         }
       }
 
@@ -206,12 +244,24 @@ body {
         background-color: variables.$soft-orange;
         text-align: center;
         @include font("Inter", 1.2rem, 400, 1.452rem, variables.$warm-black-1);
-        margin-bottom: 6.5rem;
+        margin-bottom: 2rem;
 
         strong {
           @include font("Inter", 1.2rem, 700, 1.452rem, variables.$warm-black-1);
         }
+
+        &--blue {
+          background-color: variables.$soft-blue;
+          margin-bottom: 6.5rem;
+        }
       }
     }
+  }
+
+  .statistics {
+    width: 100vw;
+    min-width: 32rem;
+    height: 91rem;
+    background-color: variables.$warm-black;
   }
 }
