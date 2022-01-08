@@ -191,9 +191,6 @@ body {
           }
 
           .crypto-table--blue {
-            width: 19rem;
-            margin: 0 auto;
-
             tr {
               td:nth-child(1) {
                 width: 10.1rem;
@@ -203,23 +200,6 @@ body {
                 width: 8.8rem;
               }
             }
-          }
-        }
-
-        .crypto-table__arrow {
-          display: inline-block;
-          width: 1.2rem;
-          height: 1.2rem;
-          background-image: url("../assets/icons/right-arrow.svg");
-          background-repeat: no-repeat;
-          position: absolute;
-          top: 47%;
-          right: -12%;
-
-          &--left {
-            transform: rotate(180deg);
-            margin-top: 10px;
-            left: -10%;
           }
         }
 
