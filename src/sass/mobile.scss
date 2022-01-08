@@ -1,5 +1,3 @@
-// font-family: 'Inter', sans-serif;
-
 // Import sass variables
 @use "./variables";
 
@@ -85,7 +83,7 @@ body {
   height: auto;
 
   .introduction {
-    background-color: variables.$off-white;
+    background-color: #faf8f7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,6 +108,96 @@ body {
 
       p {
         @include font("DM Sans", 1.4rem, 500, 1.8rem, #757575);
+      }
+    }
+
+    &__table {
+      width: 70%;
+
+      div {
+        margin-bottom: 1.6rem;
+
+        p {
+          text-align: left;
+          margin-bottom: 1.2rem;
+          @include font("DM Sans", 1.8rem, 700, 2.344rem, #ff9536);
+        }
+
+        div {
+          .crypto-table {
+            width: 100%;
+            background-color: variables.$off-white;
+
+            tr {
+              background-color: #ffffff;
+              height: 3.9rem;
+              text-align: left;
+
+              td:nth-child(1) {
+                @include font("Inter", 1.6rem, 500, 1.936rem, #b5b0ac);
+                padding: 10px 12px 10px 12px;
+                width: 10.1rem;
+              }
+
+              td:nth-child(2) {
+                @include font("Inter", 1.4rem, 400, 1.694rem, #757575);
+                padding: 11px 12px 11px 12px;
+                width: 9.5rem;
+
+                .crypto-table__stats {
+                  display: inline-block;
+                  margin-left: 1.5rem;
+                  width: 1.2rem;
+                  height: 1.2rem;
+
+                  &--down {
+                    background-image: url("../assets/icons/trending-down.svg");
+                  }
+
+                  &--up {
+                    background-image: url("../assets/icons/trending-up.svg");
+                  }
+                }
+              }
+            }
+
+            tr:first-child {
+              td:nth-child(1) {
+                border-radius: 8px 0px 0px 0px;
+              }
+
+              td:nth-child(2) {
+                border-radius: 0px 8px 0px 0px;
+              }
+            }
+
+            tr:last-child {
+              td:nth-child(1) {
+                border-radius: 0px 0px 0px 8px;
+              }
+
+              td:nth-child(2) {
+                border-radius: 0px 0px 8px 0px;
+              }
+            }
+          }
+        }
+      }
+
+      .introduction__info {
+        display: inline-block;
+        width: 17.3rem;
+        height: 3.1rem;
+        border-radius: 0.8rem;
+        padding: 0.8rem;
+        background-color: variables.$soft-orange;
+        text-align: center;
+        @include font("Inter", 1.2rem, 400, 1.452rem, variables.$warm-black-1);
+        margin-bottom: 6.5rem;
+
+        strong {
+          @include font("Inter", 1.2rem, 700, 1.452rem, variables.$warm-black-1);
+        }
       }
     }
   }
