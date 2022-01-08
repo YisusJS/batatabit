@@ -124,6 +124,8 @@ body {
         }
 
         div {
+          position: relative;
+
           .crypto-table {
             width: 100%;
             background-color: variables.$off-white;
@@ -181,6 +183,17 @@ body {
               }
             }
           }
+        }
+
+        .crypto-table__arrow {
+          display: inline-block;
+          width: 1.2rem;
+          height: 1.2rem;
+          background-image: url("../assets/icons/right-arrow.svg");
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 47%;
+          right: -12%;
         }
       }
 
