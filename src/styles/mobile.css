@@ -83,6 +83,7 @@ body {
   height: auto;
 }
 .main .introduction {
+  width: 100%;
   background-color: #faf8f7;
   display: flex;
   flex-direction: column;
@@ -123,6 +124,8 @@ body {
 }
 .main .introduction__table div .introduction__title {
   text-align: left;
+  display: inline-block;
+  width: 10.3rem;
   margin-bottom: 1.2rem;
   margin-left: 3rem;
   font-family: "DM Sans";
@@ -235,6 +238,19 @@ body {
   min-width: 32rem;
   height: 91rem;
   background-color: #201E1C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main .statistics h3 {
+  font-family: "DM Sans";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: #FAF8F7;
+  width: 28.8rem;
+  margin-top: 6.4rem;
 }
 
 /*# sourceMappingURL=mobile.css.map */

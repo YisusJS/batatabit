@@ -83,6 +83,7 @@ body {
   height: auto;
 
   .introduction {
+    width: 100%;
     background-color: #faf8f7;
     display: flex;
     flex-direction: column;
@@ -120,6 +121,8 @@ body {
 
         .introduction__title {
           text-align: left;
+          display: inline-block;
+          width: 10.3rem;
           margin-bottom: 1.2rem;
           margin-left: 3rem;
           @include font("DM Sans", 1.8rem, 700, 2.344rem, #ff9536);
@@ -243,5 +246,15 @@ body {
     min-width: 32rem;
     height: 91rem;
     background-color: variables.$warm-black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      @include font("DM Sans", 2.4rem, 700, 2.6rem, variables.$off-white);
+      width: 28.8rem;
+      margin-top: 6.4rem;
+    }
   }
 }
