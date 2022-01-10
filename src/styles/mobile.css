@@ -376,21 +376,22 @@ body {
   color: #757575;
 }
 .main .plans__scroll {
-  height: 34rem;
   display: flex;
-  align-items: center;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  padding: 2rem 0;
+  gap: 5rem;
+}
+.main .plans__scroll .plans__table {
+  scroll-snap-align: center;
 }
 .main .plans__scroll .plans__table .plan-table {
   position: relative;
-  scroll-snap-align: center;
   width: 70%;
   min-width: 23rem;
   max-width: 23rem;
   height: 25rem;
-  margin: 0 4rem;
   border-radius: 0.8rem;
   background-color: #FAF8F7;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);

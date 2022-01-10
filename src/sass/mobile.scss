@@ -374,22 +374,22 @@ body {
     }
 
     &__scroll {
-      height: 34rem;
       display: flex;
-      align-items: center;
       overflow-x: scroll;
       overscroll-behavior-x: contain;
       scroll-snap-type: x proximity;
+      padding: 2rem 0;
+      gap: 5rem;
 
       .plans__table {
+        scroll-snap-align: center;
+
         .plan-table {
           position: relative;
-          scroll-snap-align: center;
           width: 70%;
           min-width: 23rem;
           max-width: 23rem;
           height: 25rem;
-          margin: 0 4rem;
           border-radius: 0.8rem;
           background-color: variables.$off-white;
           @include boxShadow("white");
