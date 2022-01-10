@@ -369,7 +369,7 @@ body {
       max-width: 90rem;
       width: 28.8rem;
       height: 3.6rem;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       @include font("DM Sans", 1.4rem, 500, 1.8rem, #757575);
     }
 
@@ -414,6 +414,18 @@ body {
           sup {
             @include font("Inter", 1.2rem, 500, normal, #363636);
           }
+
+          &--main {
+            color: #000000;
+          }
+
+          &--optional {
+            color: #bababa;
+
+            sup {
+              color: #bababa;
+            }
+          }
         }
 
         &__description {
@@ -451,12 +463,17 @@ body {
           }
 
           &--gray {
+            color: #bababa;
             border: 2px solid #bababa;
 
             span {
               background-image: url("../assets/icons/arrow-gray.svg");
             }
           }
+        }
+
+        &__button:hover {
+          background-image: red;
         }
       }
     }

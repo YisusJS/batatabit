@@ -368,7 +368,7 @@ body {
   max-width: 90rem;
   width: 28.8rem;
   height: 3.6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-family: "DM Sans";
   font-size: 1.4rem;
   font-weight: 500;
@@ -429,6 +429,15 @@ body {
   line-height: normal;
   color: #363636;
 }
+.main .plans__table .plan-table__price--main {
+  color: #000000;
+}
+.main .plans__table .plan-table__price--optional {
+  color: #bababa;
+}
+.main .plans__table .plan-table__price--optional sup {
+  color: #bababa;
+}
 .main .plans__table .plan-table__description {
   width: 15.8rem;
   margin: 1.6rem 0;
@@ -468,10 +477,14 @@ body {
   background-image: url("../assets/icons/orange-right-arrow.svg");
 }
 .main .plans__table .plan-table__button--gray {
+  color: #bababa;
   border: 2px solid #bababa;
 }
 .main .plans__table .plan-table__button--gray span {
   background-image: url("../assets/icons/arrow-gray.svg");
+}
+.main .plans__table .plan-table__button:hover {
+  background-image: red;
 }
 
 /*# sourceMappingURL=mobile.css.map */
