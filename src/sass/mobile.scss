@@ -240,7 +240,7 @@ body {
     }
   }
 
-  .statistics {
+  .benefits {
     position: relative;
     width: 100vw;
     min-width: 32rem;
@@ -258,7 +258,7 @@ body {
       margin-bottom: 2.4rem;
     }
 
-    .statistics__description {
+    .benefits__description {
       @include font("DM Sans", 1.4rem, 500, 1.8rem, #808080);
       margin-bottom: 3.2rem;
     }
@@ -275,7 +275,7 @@ body {
       padding-left: 1.6rem;
       padding-bottom: 2.2rem;
 
-      .statistics__logo {
+      .benefits__logo {
         display: inline-block;
         width: 2.4rem;
         height: 2.4rem;
@@ -337,6 +337,34 @@ body {
       img {
         width: 100%;
       }
+    }
+  }
+
+  .plans {
+    width: 100vw;
+    min-width: 32rem;
+    height: auto;
+    background-color: variables.$off-white;
+    text-align: center;
+
+    h5 {
+      display: inline-block;
+      width: 28.8rem;
+      height: 5.2rem;
+      margin-bottom: 2.4rem;
+      @include font("DM Sans", 2.4rem, 700, 2.6rem, variables.$warm-black-1);
+      margin-top: 6.4rem;
+    }
+
+    p {
+      display: inline-block;
+      width: 28.8rem;
+      height: 3.6rem;
+      margin-bottom: 5rem;
+      @include font("DM Sans", 1.4rem, 500, 1.8rem, #757575);
+    }
+
+    &__table {
     }
   }
 }

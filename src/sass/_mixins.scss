@@ -14,7 +14,7 @@
 @mixin boxShadow($type) {
   @if $type == "black" {
     box-shadow: variables.$black-shadow; 
-  } else {
+  } @else {
     box-shadow: variables.$white-shadow; 
   }
 }

@@ -66,9 +66,6 @@ body {
   color: #201E1C;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
-.header__button else {
-  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-}
 .header__button span {
   display: inline-block;
   width: 1.2rem;
@@ -232,7 +229,7 @@ body {
   background-color: #E7F5FF;
   margin-bottom: 6.5rem;
 }
-.main .statistics {
+.main .benefits {
   position: relative;
   width: 100vw;
   min-width: 32rem;
@@ -243,7 +240,7 @@ body {
   align-items: center;
   text-align: center;
 }
-.main .statistics h3 {
+.main .benefits h3 {
   font-family: "DM Sans";
   font-size: 2.4rem;
   font-weight: 700;
@@ -253,7 +250,7 @@ body {
   margin-top: 6.4rem;
   margin-bottom: 2.4rem;
 }
-.main .statistics .statistics__description {
+.main .benefits .benefits__description {
   font-family: "DM Sans";
   font-size: 1.4rem;
   font-weight: 500;
@@ -261,7 +258,7 @@ body {
   color: #808080;
   margin-bottom: 3.2rem;
 }
-.main .statistics__section {
+.main .benefits__section {
   width: 28.8rem;
   min-height: 15.2rem;
   max-height: auto;
@@ -273,26 +270,26 @@ body {
   padding-left: 1.6rem;
   padding-bottom: 2.2rem;
 }
-.main .statistics__section .statistics__logo {
+.main .benefits__section .benefits__logo {
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
   background-repeat: no-repeat;
   margin-top: 1.4rem;
 }
-.main .statistics__section .statistics__logo--clock {
+.main .benefits__section .benefits__logo--clock {
   background-image: url("../assets/icons/clock.svg");
 }
-.main .statistics__section .statistics__logo--eye {
+.main .benefits__section .benefits__logo--eye {
   background-image: url("../assets/icons/eye.svg");
 }
-.main .statistics__section .statistics__logo--dollar {
+.main .benefits__section .benefits__logo--dollar {
   background-image: url("../assets/icons/dollar.svg");
 }
-.main .statistics__section .statistics__logo--check {
+.main .benefits__section .benefits__logo--check {
   background-image: url("../assets/icons/check.svg");
 }
-.main .statistics__section h4 {
+.main .benefits__section h4 {
   font-family: "DM Sans";
   font-size: 1.8rem;
   font-weight: 700;
@@ -301,7 +298,7 @@ body {
   margin-top: 1.8rem;
   margin-bottom: 1rem;
 }
-.main .statistics__section p {
+.main .benefits__section p {
   display: inline-block;
   width: 25.2rem;
   font-family: "DM Sans";
@@ -310,7 +307,7 @@ body {
   line-height: 1.8rem;
   color: #808080;
 }
-.main .statistics__section:last-child {
+.main .benefits__section:last-child {
   margin-bottom: 4.7rem;
 }
 .main .image {
@@ -338,6 +335,36 @@ body {
 }
 .main .image figure img {
   width: 100%;
+}
+.main .plans {
+  width: 100vw;
+  min-width: 32rem;
+  height: auto;
+  background-color: #FAF8F7;
+  text-align: center;
+}
+.main .plans h5 {
+  display: inline-block;
+  width: 28.8rem;
+  height: 5.2rem;
+  margin-bottom: 2.4rem;
+  font-family: "DM Sans";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: #282623;
+  margin-top: 6.4rem;
+}
+.main .plans p {
+  display: inline-block;
+  width: 28.8rem;
+  height: 3.6rem;
+  margin-bottom: 5rem;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
 }
 
 /*# sourceMappingURL=mobile.css.map */
