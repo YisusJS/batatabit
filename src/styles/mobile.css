@@ -380,7 +380,7 @@ body {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   gap: 5rem;
 }
 .main .plans__scroll .plans__table {
@@ -493,6 +493,14 @@ body {
 }
 .main .plans__scroll .plans__table .plan-table__button--gray span {
   background-image: url("../assets/icons/arrow-gray.svg");
+}
+.main .plans__scroll .plans__table .plan-table__button:hover {
+  border-color: #f7931a;
+  color: #201E1C;
+  background-color: #ebbd85;
+}
+.main .plans__scroll .plans__table .plan-table__button:hover span {
+  background-image: url("../assets/icons/orange-right-arrow.svg");
 }
 .main .plans__scroll::-webkit-scrollbar {
   background-color: #FFE9D5;

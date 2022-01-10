@@ -378,7 +378,7 @@ body {
       overflow-x: scroll;
       overscroll-behavior-x: contain;
       scroll-snap-type: x proximity;
-      padding: 2rem 0;
+      padding: 2rem 2rem;
       gap: 5rem;
 
       .plans__table {
@@ -479,6 +479,16 @@ body {
               span {
                 background-image: url("../assets/icons/arrow-gray.svg");
               }
+            }
+          }
+
+          &__button:hover {
+            border-color: #f7931a;
+            color: variables.$warm-black;
+            background-color:#ebbd85;
+
+            span {
+              background-image: url("../assets/icons/orange-right-arrow.svg");
             }
           }
         }
