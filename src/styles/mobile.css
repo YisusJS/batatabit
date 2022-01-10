@@ -201,6 +201,7 @@ body {
   height: 2.401rem;
   background-image: url("../assets/icons/batata.svg");
   background-repeat: no-repeat;
+  z-index: 10;
   position: absolute;
   top: 160%;
   left: calc(50% - 2.401rem);
@@ -232,6 +233,7 @@ body {
   margin-bottom: 6.5rem;
 }
 .main .statistics {
+  position: relative;
   width: 100vw;
   min-width: 32rem;
   height: 91rem;
@@ -310,6 +312,32 @@ body {
 }
 .main .statistics__section:last-child {
   margin-bottom: 4.7rem;
+}
+.main .image {
+  width: 100vw;
+  min-width: 32rem;
+  height: 38.7rem;
+}
+.main .image h4 {
+  display: inline-block;
+  position: absolute;
+  margin-top: 6.4rem;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 28.8rem;
+  font-family: "DM Sans";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: #FAF8F7;
+}
+.main .image figure {
+  width: 100%;
+  height: 100%;
+}
+.main .image figure img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=mobile.css.map */
