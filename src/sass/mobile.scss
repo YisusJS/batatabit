@@ -379,7 +379,7 @@ body {
       overscroll-behavior-x: contain;
       scroll-snap-type: x proximity;
       padding: 2rem 2rem;
-      gap: 5rem;
+      gap: 10rem;
 
       .plans__table {
         scroll-snap-align: center;
@@ -406,7 +406,7 @@ body {
             transform: translateX(-50%);
 
             &--orange {
-            background-color: #f7931a;
+              background-color: #f7931a;
             }
 
             &--blue {
@@ -496,7 +496,7 @@ body {
           &__button:hover {
             border-color: #f7931a;
             color: variables.$warm-black;
-            background-color:#ebbd85;
+            background-color: #ebbd85;
 
             span {
               background-image: url("../assets/icons/orange-right-arrow.svg");
@@ -512,6 +512,39 @@ body {
     }
     &__scroll::-webkit-scrollbar-thumb {
       background-color: variables.$bitcoin-orange;
+    }
+  }
+}
+// ---- Footer ----
+.footer {
+  width: 100vw;
+  height: 15rem;
+  display: flex;
+  background-color: variables.$bitcoin-orange;
+
+  &__left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      margin-bottom: 0.8rem;
+      text-decoration: none;
+      @include font("DM Sans", 1.4rem, 500, normal, variables.$off-white);
+    }
+  }
+
+  &__right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+      width: 6.4rem;
+      height: 5rem;
     }
   }
 }

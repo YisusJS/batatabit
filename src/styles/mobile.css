@@ -381,7 +381,7 @@ body {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
   padding: 2rem 2rem;
-  gap: 5rem;
+  gap: 10rem;
 }
 .main .plans__scroll .plans__table {
   scroll-snap-align: center;
@@ -516,6 +516,39 @@ body {
 }
 .main .plans__scroll::-webkit-scrollbar-thumb {
   background-color: #F7931A;
+}
+
+.footer {
+  width: 100vw;
+  height: 15rem;
+  display: flex;
+  background-color: #F7931A;
+}
+.footer__left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__left a {
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #FAF8F7;
+}
+.footer__right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__right figure {
+  width: 6.4rem;
+  height: 5rem;
 }
 
 /*# sourceMappingURL=mobile.css.map */
