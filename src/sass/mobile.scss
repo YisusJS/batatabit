@@ -267,7 +267,7 @@ body {
     &__section {
       width: 90%;
       min-width: 28.8rem;
-      max-width: 90rem;
+      max-width: 28.8rem;
       min-height: 15.2rem;
       max-height: auto;
       background-color: variables.$warm-black-1;
@@ -338,10 +338,8 @@ body {
       min-width: 32rem;
       height: 38.7rem;
       overflow: hidden;
-
-      img {
-        width: 100%;
-      }
+      background: url("../assets/img/bitcoinbaby2x.jpg") no-repeat center/cover;
+      background-attachment: fixed;
     }
   }
 

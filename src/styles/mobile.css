@@ -262,7 +262,7 @@ body {
 .main .benefits__section {
   width: 90%;
   min-width: 28.8rem;
-  max-width: 90rem;
+  max-width: 28.8rem;
   min-height: 15.2rem;
   max-height: auto;
   background-color: #282623;
@@ -337,9 +337,8 @@ body {
   min-width: 32rem;
   height: 38.7rem;
   overflow: hidden;
-}
-.main .image figure img {
-  width: 100%;
+  background: url("../assets/img/bitcoinbaby2x.jpg") no-repeat center/cover;
+  background-attachment: fixed;
 }
 .main .plans {
   width: 100%;
