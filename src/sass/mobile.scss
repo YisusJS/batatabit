@@ -400,11 +400,22 @@ body {
             height: 3.1rem;
             border-radius: 0.8rem;
             padding: 0.8rem;
-            background-color: variables.$bitcoin-orange;
             @include font("Inter", 1.2rem, 700, 1.6rem, variables.$off-white);
             top: -5%;
             left: 50%;
             transform: translateX(-50%);
+
+            &--orange {
+            background-color: #f7931a;
+            }
+
+            &--blue {
+              background-color: #2fbce7;
+            }
+
+            &--dark {
+              background-color: #eb4444;
+            }
           }
 
           &__option {

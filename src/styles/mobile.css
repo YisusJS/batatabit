@@ -402,7 +402,6 @@ body {
   height: 3.1rem;
   border-radius: 0.8rem;
   padding: 0.8rem;
-  background-color: #F7931A;
   font-family: "Inter";
   font-size: 1.2rem;
   font-weight: 700;
@@ -411,6 +410,15 @@ body {
   top: -5%;
   left: 50%;
   transform: translateX(-50%);
+}
+.main .plans__scroll .plans__table .plan-table__message--orange {
+  background-color: #f7931a;
+}
+.main .plans__scroll .plans__table .plan-table__message--blue {
+  background-color: #2fbce7;
+}
+.main .plans__scroll .plans__table .plan-table__message--dark {
+  background-color: #eb4444;
 }
 .main .plans__scroll .plans__table .plan-table__option {
   width: 90%;
