@@ -39,9 +39,7 @@ const allDate = getDate();
 span.innerHTML += allDate;
 span2.innerHTML += allDate;
 
-
-// Center plans
 const window_height = window.innerHeight
 const plans_scroll = document.getElementsByClassName('plans__scroll')[0]
-const movement_required = (plans_scroll.scrollHeight - window_height - 100) / 2
+const movement_required = (plans_scroll.scrollHeight - window_height) / 2
 plans_scroll.scrollBy(-movement_required, 0)

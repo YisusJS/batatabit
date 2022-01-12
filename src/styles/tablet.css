@@ -1,0 +1,26 @@
+@media (min-width: 600px) {
+  html {
+    font-size: 67%;
+  }
+
+  .main .benefits {
+    height: auto;
+  }
+  .main .benefits__container {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+  }
+  .main .benefits__section {
+    margin-bottom: 0;
+  }
+  .main .benefits__section:last-child {
+    margin-bottom: 0;
+  }
+  .main .image {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=tablet.css.map */

@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   height: auto;
   font-size: 1.6rem;
 }
@@ -232,9 +233,9 @@ body {
 }
 .main .benefits {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-width: 32rem;
-  height: 91rem;
+  height: auto;
   background-color: #201E1C;
   display: flex;
   flex-direction: column;
@@ -259,8 +260,16 @@ body {
   color: #808080;
   margin-bottom: 3.2rem;
 }
+.main .benefits__container {
+  padding-bottom: 2.2rem;
+  width: auto;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .main .benefits__section {
-  width: 90%;
+  width: 100%;
   min-width: 28.8rem;
   max-width: 28.8rem;
   min-height: 15.2rem;
@@ -271,7 +280,6 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   text-align: left;
   padding-left: 1.6rem;
-  padding-bottom: 2.2rem;
 }
 .main .benefits__section .benefits__logo {
   display: inline-block;
@@ -347,6 +355,10 @@ body {
   background-color: #FAF8F7;
   text-align: center;
   padding-bottom: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .main .plans h5 {
   display: inline-block;
@@ -375,7 +387,10 @@ body {
   color: #757575;
 }
 .main .plans__scroll {
+  width: 100%;
+  max-width: 100rem;
   display: flex;
+  justify-content: flex-start;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
