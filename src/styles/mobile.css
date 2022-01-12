@@ -117,6 +117,8 @@ body {
 }
 .main .introduction__table {
   width: 70%;
+  min-width: 25rem;
+  max-width: 24rem;
 }
 .main .introduction__table div {
   margin-bottom: 1.6rem;
