@@ -1,2 +1,5 @@
 # Batatabit
-Proyecto de prueba de Platzi
+
+Creación de un sitio web responsivo usando la filosofía de mobile first
+
+https://edwin-p.com/
